@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+kernel="${1}"
+
+qemu-system-riscv64 \
+  -machine virt \
+  -bios none \
+  -nographic \
+  -kernel ${kernel}
